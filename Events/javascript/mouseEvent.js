@@ -22,3 +22,20 @@ btn.addEventListener('mouseup',function(event){
 btn.addEventListener('mousemove',function(event){
     console.log('mouseMove')
 })
+
+// google link click event
+let link = document.getElementById('lnk')
+console.log("link here:",link)
+link.addEventListener('click',function(event){
+    console.log("target here:",event.target)
+    console.log("currnt target here:",event.currentTarget)
+    console.log("type here:",event.type)
+    event.preventDefault();//stop the link from open
+})
+
+// text click event
+let text = document.getElementById('txt')
+console.log("text here:",text)
+text.addEventListener('input',function(event){
+     console.log(event.target,event.target.value)
+})
