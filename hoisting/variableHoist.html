@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VariableHoisting</title>
+</head>
+<body>
+    <h1>variable hoisting</h1>
+    <p>
+        1.javascript behaviour where variables and function are move to the top of their containing scope.<br>
+    </p>
+    <p>
+        <h2>variable is declare after it has been used only var keyword</h2>
+        x=5;
+        console.log(x)
+        var x;
+    </p>
+    <p>
+        <h2>using let variable before it is declare give refferrenceError</h2>
+        x=5;
+        console.log(x)
+        let x;     
+    </p>
+    <p>
+        <h2>using let const before it is declare give SyntaxError</h2>
+        x=5;
+        console.log(x)
+        const x;
+    </p>
+    <script src="variableHoist.js"></script>
+</body>
+</html>
