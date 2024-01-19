@@ -14,3 +14,10 @@ getVal.addEventListener('submit',function(e){
         upass.value = "";
     }
 })
+// get values from input text
+document.getElementById('firstname').addEventListener('change',function(event){
+    console.log('this:',event.target)
+    console.log(event.target.tagName)
+    console.log(event.target.value)
+    console.log('this.value',this.value)
+})
